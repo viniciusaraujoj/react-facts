@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #21222a;
+  height: 90px;
+  padding: 30px;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.logo {
+  width: 30px;
+}
+
+.logo_container h2 {
+  color: #61dafb;
+  font-weight: 700;
+}
+
+.header--info {
+  color: #deebf8;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+}
+
+/* content */
+.content {
+  background: #282d35;
+  height: calc(100vh - 90px);
+  padding: 50px 35px;
+  color: #fff;
+}
+
+.content--title {
+  margin-bottom: 50px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.05px;
+}
+
+.content--facts {
+  padding-left: 45px;
+}
+
+.content--facts li {
+  margin-bottom: 20px;
+}
+
+.content--facts li::marker {
+  color: #61dafb;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    background-image: url('./assets/reactjs-icon2.png');
+    background-repeat: no-repeat;
+    background-position: right 30%;
+  }
+}
